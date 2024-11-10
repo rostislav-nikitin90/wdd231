@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 - Web Frontend Development I Course Home Page - Rostislav Nikitin</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment portal home page for WDD 231 - Web Frontend Development I at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script defer src="scripts/base.js"></script>
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 231 - Rostislav Nikitin</h1>
+    <header>
+        <h1>Rostislav Nikitin</h1>
+        <div class="student-photo-container">
+            <img src="images/nikitin-rostislav.webp" id="student-photo" alt="Photo of student Rostislav Nikitin, course WDD 231" loading="lazy"/>
+        </div>
+        <div class="menu-button-container">
+            <button id="menuButton" title="Menu"></button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="#" title="Home Page">Home</a></li>
+                <li><a href="#" title="Chamber Page">Chamber</a></li>
+                <li><a href="#" title="GitHub Profile Page">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/nikitin-rostislav/" target="_blank" title="LinkedIn Page">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="course-work-section">
+            <h2 class="course-work-heading">Course Work</h2>
+            <ul class="course-work">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="budva-section">
+            <h2 class="budva-heading">Budva, Montenegro</h2>
+            <figure class="figure-budva">
+                <img src="images/budva-old-town.webp" id="budvaOldTown" alt="Old town of Budva, Montenegro" loading="lazy"/>
+                <figcaption>Old town of Budva</figcaption>
+            </figure>
+        </section>
+        <section class="courses-section">
+            <h2 class="courses-heading">Web and Computer Programming Certificate</h2>
+            <div class="credits-info-box">
+                <p class="credits-info"></p>
+            </div>
+            <div class="courses-button-container">
+                <button id="allCoursesBtn" class="courses-btn-dark-brown-bg-color" title="Display all courses">All</button>
+                <button id="cseCoursesBtn" class="courses-btn-default-bg-color" title="Display CSE courses">CSE</button>
+                <button id="wddCoursesBtn" class="courses-btn-default-bg-color" title="Display WDD courses">WDD</button>
+            </div>
+            <div id="coursesContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info-container">
+            <p>&copy; <span id="currentYear"></span> | Rostislav Nikitin | Montenegro</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </div>
+        <div class="flag-photo-container">
+            <img src="images/montenegro-flag.png" id="montenegro-flag-photo" alt="Photo of Montenegro flag" loading="lazy"/>
+        </div>
+    </footer>
 </body>
 </html>
