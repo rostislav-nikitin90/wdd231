@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Hotel Group Budvanska Rivijera",
+    "address": "Trg slobode 1, Budva, Montenegro 85310",
+    "phone": "+382 33 402 456",
+    "email": "reservations@budvanskarivijera.co.me",
+    "website": "https://www.hgbudvanskarivijera.com/",
+    "image": "../chamber/images/hg-budvanska-rivijera-logo.png",
+    "membership_level": 3
+  },
+  {
+    "name": "Sportsko rekreativni centar Budva",
+    "address": "Slovenska obala bb, Budva, Montenegro 85310",
+    "phone": "+382 33 452 043",
+    "email": "src.budva@t-com.me",
+    "website": "https://bazenbudva.me/",
+    "image": "../chamber/images/src-budva-logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "Odbojkaški Klub Budva",
+    "address": "Trg Sunca bb, Budva, Montenegro 85310",
+    "phone": "+382 20 665 115",
+    "email": "oscg@oscg.me",
+    "website": "https://www.oscg.me/",
+    "image": "../chamber/images/ok-budva-logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "Foto BONI",
+    "address": "Petra Prvog 12, Budva, Montenegro 85310",
+    "phone": "+382 33 401 526",
+    "email": "budva@fotoboni.net",
+    "website": "https://boni.co.me/",
+    "image": "../chamber/images/foto-boni-logo.png",
+    "membership_level": 1
+  },
+  {
+    "name": "Grad Theatre City Budva",
+    "address": "13 jula bb, Budva, Montenegro 85310",
+    "phone": "+382 33 402 935",
+    "email": "theatrecity@gradteatar.me",
+    "website": "https://gradteatar.me/?lang=en",
+    "image": "../chamber/images/grad-teatar-budva-logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "OFK Petrovac",
+    "address": "Pod Malim brdom bb, Petrovac, Budva, Montenegro 85310",
+    "phone": "+382 86 462 430",
+    "email": "info@fscg.me",
+    "website": "https://fscg.me/",
+    "image": "../chamber/images/ofk-petrovac-logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "Apartmani Montenegro",
+    "address": "28 ulica bb, Golubovci, Podgorica, Montenegro 81304",
+    "phone": "+382 69 501 535",
+    "email": "kontakt@montenegro-apartmani.com",
+    "website": "https://www.apartmani-montenegro.com/en",
+    "image": "../chamber/images/apartmani-montenegro.png",
+    "membership_level": 3
+  }
+]

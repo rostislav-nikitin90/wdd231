@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budva Chamber of Commerce Website Project - Directory Page</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Budva chamber directory page for WDD 231 - Web Frontend Development I at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <meta property="og:title" content="Budva Chamber of Commerce Website Project - Student Rostislav Nikitin">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rostislav-nikitin90.github.io/wdd231/chamber/images/budva.jpg">
+    <meta property="og:url" content="https://rostislav-nikitin90.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/chamber.js"></script>
+</head>
+<body>
+    <header>
+        <div id="headerContainer">
+            <div class="logo-container">
+                <img src="images/budva-chamber-logo.png" alt="Budva Chamber of Commerce Logo" loading="lazy"/>
+            </div>
+            <div class="chamber-of-commerce-text">
+                <h1>BUDVA</h1>
+                <div class="logo-text">Chamber of Commerce</div>
+            </div>
+            <div class="menu-button-container">
+                <button id="menuButton" title="Menu"></button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Home Page">Home</a></li>
+                    <li class="active"><a href="#" title="Directory Page">Directory</a></li>
+                    <li><a href="#" title="Join Page">Join</a></li>
+                    <li><a href="#" title="Discover Page">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="mainContainer">
+        <h2 class="business-directory-heading">Business Directory</h2>
+        <div class="button-box">
+            <button id="gridView" class="members-btn-teal-bg-color members-btn-white-font-color">Grid View</button>
+            <button id="listView" class="members-btn-default-bg-color members-btn-default-font-color">List View</button>
+        </div>
+        <div id="membersContainer" class="grid"></div>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <div class="chamber-of-commerce-info">
+                <p>Budva Chamber of Commerce</p>
+                <p>2 Mediteranska</p>
+                <p>Budva, Montenegro 85310</p>
+                <p>info@budvacc.org</p>
+                <p>033 000 000</p>
+            </div>
+            <div class="chamber-of-commerce-social-media">
+                <div><a href="https://facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="Small Facebook Icon" loading="lazy"></a></div>
+                <div><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-icon.png" alt="Small YouTube Icon" loading="lazy"></a></div>
+                <div><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png" alt="Small LinkedIn Icon" loading="lazy"></a></div>
+            </div>
+            <div class="class-project-info">
+                <p>WDD231 Class Project</p>
+                <p>Rostislav Nikitin</p>
+                <p>&copy; <span id="currentYear"></span> Budva Chamber of Commerce</p>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
