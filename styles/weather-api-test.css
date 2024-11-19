@@ -1,0 +1,77 @@
+/* This is the CSS styling for the mobile version */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    color: #ca3d16;
+    margin-bottom: 1rem;
+}
+
+h1, footer {
+    padding: 1rem;
+}
+
+main {
+    background-color: #f9f3f1;
+    padding: 1.5rem;
+    margin: 1rem 1rem 10rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 6px;
+}
+
+main p, figcaption {
+    color: #1e1e1e;
+    font-size: 1.125rem;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+main figcaption {
+    margin-bottom: 3rem;
+}
+
+#current-temp {
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #ca3d16;
+}
+
+/* This is the CSS styling for the tablet version */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        max-width: 560px;
+        margin: 0 auto 17rem;
+    }
+}
+
+/* This is the CSS styling for the desktop version */
+@media only screen and (min-width: 1025px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        max-width: 480px;
+        margin: 0 auto 10rem;
+    }
+}
