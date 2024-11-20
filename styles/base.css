@@ -52,11 +52,50 @@ header,
 
 header {
     position: relative;
-    padding: 2.2rem 0rem 0rem;
+    padding: 0rem;
 }
 
-h1, 
-#menuButton,
+.weather-box {
+    padding: 0rem 5.3rem 1.8rem 1.6rem;
+}
+
+.weather-info {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, auto);
+}
+
+.weather-info span {
+    font-size: 1rem;
+}
+
+#weatherPlace {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#currentTemp {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+#weatherIcon {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+#weatherDescription {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    text-transform: capitalize;
+}
+
+#weatherPlace,
+#currentTemp {
+    padding-top: 1.3rem;
+}
+
+h1,
 .course-work,
 .budva-heading,
 .figure-budva,
@@ -77,8 +116,8 @@ h2,
 
 h1 {
     position: absolute;
-    font-size: 1.813rem;
-    top: 5rem;
+    font-size: 1.625rem;
+    top: 11rem;
     right: 1.5rem;
 }
 
@@ -100,12 +139,14 @@ h2,
     font-weight: 500; 
 }
 
-nav, footer {
+.weather-box,
+nav, 
+footer {
     background-color: var(--brown);
 }
 
 nav {
-    margin-top: 8rem;
+    margin-top: 10.1rem;
 }
 
 /* small view navigation */
@@ -132,7 +173,7 @@ nav {
 
 .student-photo-container {
     position: absolute;
-    top: .6rem;
+    top: 6.6rem;
     left: 0rem;
 }
 
@@ -151,6 +192,8 @@ nav {
     display: none;
 }
 
+.weather-info span,
+#menuButton,
 .navigation a, 
 .course-work-heading, 
 .courses-heading,
@@ -186,7 +229,8 @@ main section {
     padding: 1.8rem 1.6rem;
 }
 
-.course-work-section, .courses-section {
+.course-work-section, 
+.courses-section {
     background-color: var(--beige);
 }
 
@@ -379,25 +423,30 @@ footer {
     header {
         position: initial;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
-        padding: 1.2rem 0rem 0rem;
+    }
+
+    .weather-box {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        padding: 1.8rem 1.6rem;
     }
 
     h1 {
         position: unset;
         font-size: 3.188rem;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         grid-column: 2 / 3;
         text-align: left;
-        margin: 2.3rem 1.4rem 0rem 0rem;
+        margin: 3.4rem 1.4rem 0rem 0rem;
         top: unset;
         right: unset;
     }
 
     .student-photo-container {
         position: unset;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         grid-column: 1 / 2;
         top: unset;
         left: unset;
@@ -405,12 +454,43 @@ footer {
 
     #student-photo {
         float: right;
+        margin-top: 1.1rem;
     }
 
     nav {
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         grid-column: 1 / 3;
         margin-top: 2.1rem;
+    }
+
+    .weather-info {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, auto);
+        column-gap: .5rem;
+        width: max-content;
+        margin: 0 auto;
+    }
+    
+    #weatherPlace {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    
+    #currentTemp {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    
+    #weatherIcon {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+    
+    #weatherDescription {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+        padding-top: 1.3rem;
     }
 
     #menuButton {
@@ -542,18 +622,23 @@ footer {
     header {
         position: initial;
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;;
         grid-template-columns: auto auto;
-        padding: 1.2rem 0rem 0rem;
+    }
+
+    .weather-box {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        padding: 1.8rem 1.6rem;
     }
 
     h1 {
         position: unset;
         font-size: 3.188rem;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         grid-column: 2 / 3;
         text-align: left;
-        margin: 2.3rem 1.4rem 0rem 0rem;
+        margin: 3.4rem 1.4rem 0rem 0rem;
         top: unset;
         right: unset;
     }
@@ -564,7 +649,7 @@ footer {
 
     .student-photo-container {
         position: unset;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         grid-column: 1 / 2;
         top: unset;
         left: unset;
@@ -572,12 +657,43 @@ footer {
 
     #student-photo {
         float: right;
+        margin-top: 1.1rem;
     }
 
     nav {
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         grid-column: 1 / 3;
         margin-top: 2.1rem;
+    }
+
+    .weather-info {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, auto);
+        column-gap: .5rem;
+        width: max-content;
+        margin: 0 auto;
+    }
+    
+    #weatherPlace {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    
+    #currentTemp {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    
+    #weatherIcon {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+    
+    #weatherDescription {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+        padding-top: 1.3rem;
     }
 
     #menuButton {

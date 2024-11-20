@@ -1,10 +1,44 @@
 const hamButton = document.querySelector("#menuButton");
 const navigation = document.querySelector(".navigation");
+const weatherLocation = document.querySelector("#weatherPlace")
+const currentTemp = document.querySelector("#currentTemp");
+const weatherIcon = document.querySelector("#weatherIcon");
+const weatherDesc = document.querySelector("#weatherDescription");
+
+const url = "//api.openweathermap.org/data/2.5/weather?lat=42.29157919378453&lon=18.840046948534674&units=metric&appid=12f91a41bd21c1ca9341109b7e228eab";
 
 hamButton.addEventListener("click", () => {
 	navigation.classList.toggle("open");
 	hamButton.classList.toggle("open");
 });
+
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+}
+  
+apiFetch();
+
+function displayResults(data) {
+  let location = data.name; 
+  weatherLocation.textContent = `${location}`;
+  currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", data.weather[0].description);
+  weatherIcon.setAttribute("loading", "lazy");
+  weatherDesc.textContent = `${desc}`;
+}
 
 const courses = [
     {
