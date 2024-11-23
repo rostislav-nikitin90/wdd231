@@ -13,13 +13,20 @@
 	box-sizing: border-box;
 }
 
-body {
-    background-color: var(--primary);
-}
-
 img {
     max-width: 100%;
     height: auto;
+}
+
+img,
+main,
+footer {
+    animation: blur 4s;
+}
+
+@keyframes blur {
+    0% { -webkit-filter: blur(5px);}
+    100% { -webkit-filter: blur(0px);}
 }
 
 ul {
@@ -29,7 +36,8 @@ ul {
 
 #headerContainer,
 .navigation a,
-#mainContainer {
+#mainContainer,
+.main-content-container {
     padding: 1rem;
 }
 
@@ -38,11 +46,18 @@ ul {
 }
 
 header,
+.events-heading,
+.current-weather-heading,
+#weatherForecastDataBox,
 footer {
     background-color: var(--accent3);
 }
 
-#mainContainer {
+body,
+#homeMainContainer,
+main,
+.main-content-container,
+.intro-section {
     background-color: var(--accent2);
 }
 
@@ -72,12 +87,19 @@ nav {
 }
 
 .navigation a,
-.grid .member {
+.home-intro-heading,
+#callToAction,
+.grid .member,
+.grid .selected-member h2,
+.events-heading,
+.current-weather-heading,
+.weather-forecast-heading {
     text-align: center;
 }
 
 .navigation a,
-.button-box button {
+.button-box button,
+#callToAction {
     text-decoration: none;
 }
 
@@ -95,7 +117,10 @@ nav {
     text-decoration: underline;
 }
 
-a, p, button {
+a, 
+p, 
+button, 
+span {
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -111,8 +136,40 @@ h1,
 .logo-text,
 #menuButton, 
 .navigation li a,
+.home-intro-heading,
+.events-heading,
+.current-weather-heading,
+#weatherForecastDataBox p,
 footer p {
     color: var(--primary);
+}
+
+.delayed-animation {
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.delayed-animation2 {
+    opacity: 0;
+    animation: fadeIn2 2s 3s forwards;
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* small view navigation */
@@ -168,7 +225,112 @@ nav ul li.active a {
     text-decoration: underline;
 }
 
+/* home page */
+.intro-section {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.main-heading-box {
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    z-index: 1;
+    padding: .2rem 1rem;
+}
+
+.budva-intro-banner {
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    height: fit-content;
+}
+
+#callToAction {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.home-intro-heading {
+    font-size: 1.625rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+#budvaIntroPhoto img {
+    display: block;
+    filter: brightness(90%);
+}
+
+.events-heading,
+.current-weather-heading,
+.weather-forecast-heading {
+    font-weight: 400;
+    padding: .5rem;
+}
+
+.current-weather-data-box span {
+    display: block;
+    padding-bottom: .5rem;
+}
+
+.event-section div p span {
+    font-weight: 700;
+}
+
+.event-section div {
+    padding: .7rem .7rem .9rem;
+}
+
+.current-weather-box {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    column-gap: 1.6rem;
+}
+
+#weatherIcon {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: end;
+}
+
+.current-weather-data-box {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding: .9rem .5rem .9rem 0rem;
+    margin-right: .2rem;
+}
+
+#weatherDescription {
+    text-transform: capitalize;
+}
+
+#weatherForecastDataBox {
+    padding: .5rem .7rem .9rem;
+}
+
+#weatherForecastDataBox p {
+    font-size: 1.125rem;
+}
+
+.event-section,
+.current-weather-section,
+.three-day-weather-forecast-section {
+    border-radius: 10px 10px 6px 6px;
+}
+
+.grid .selected-member h2 {
+    border-bottom: 2px solid var(--accent1);
+}
+
+.grid .selected-member img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* directory page */
+.home-heading,
 .business-directory-heading {
     font-size: 1.5rem;
 }
@@ -191,8 +353,16 @@ nav ul li.active a {
     grid-column: 2 / 3;
 }
 
-.button-box button {
+.button-box button,
+.events-heading,
+.current-weather-heading,
+.weather-forecast-heading,
+#callToAction {
     font-size: 1.375rem;
+}
+
+.button-box button,
+#callToAction {
     font-weight: 500;
     padding: 1.125rem 0rem;
     border: 1px solid var(--accent3);
@@ -201,12 +371,14 @@ nav ul li.active a {
     cursor: pointer;
 }
 
-.button-box button:hover {
+.button-box button:hover,
+#callToAction:hover {
     color: var(--primary);
     background-color: var(--accent3);
 }
 
-.button-box button:active {
+.button-box button:active,
+#callToAction:active {
     color: var(--accent3);
     background-color: var(--primary);
     border: 2px solid var(--accent3);
@@ -228,7 +400,8 @@ nav ul li.active a {
     color: var(--primary);
 }
 
-#membersContainer {
+#membersContainer,
+#companySpotlightDataBox {
     display: flex;
     flex-wrap: wrap;
 }
@@ -239,7 +412,8 @@ nav ul li.active a {
     row-gap: 1.25rem;
 }
 
-.grid .member {
+.grid .member,
+.grid .selected-member {
     width: 100%;
     height: auto;
 }
@@ -250,17 +424,29 @@ nav ul li.active a {
 .list ul li h2,
 .list ul li p,
 .list ul li a,
+.event-section div h2,
+.event-section div p,
+.event-section div a,
+span,
+.grid .selected-member h2,
+.grid .selected-member p,
+.grid .selected-member a,
 footer p {
     font-size: .938rem;
 }
 
 .grid .member h2,
-.list ul li h2 {
+.list ul li h2,
+.event-section div h2,
+.grid .selected-member h2 {
     margin-bottom: .3rem;
 }
 
 .grid .member p,
-.list ul li p {
+.list ul li p,
+.event-section div p,
+#weatherForecastDataBox p,
+.grid .selected-member p {
     line-height: 1.7;
 }
 
@@ -270,7 +456,8 @@ footer p {
 } 
 
 .grid .member p:nth-of-type(3),
-.list ul li p:nth-of-type(3) {
+.list ul li p:nth-of-type(3),
+.event-section div p:nth-of-type(4) {
     margin-bottom: .1rem;
 }
 
@@ -279,11 +466,18 @@ footer p {
     margin-top: .3rem;
 }
 
+.home-heading,
 .business-directory-heading,
 .grid .member h2,
 .grid .member a,
 .list ul li,
-.list ul li a {
+.list ul li a,
+.event-section div:nth-of-type(even) h2,
+.event-section div:nth-of-type(even) a,
+.weather-forecast-heading,
+.grid .selected-member h2, 
+.grid .selected-member a,
+#callToAction {
     color: var(--accent3);
 }
 
@@ -292,11 +486,33 @@ footer p {
 }
 
 .grid .member,
-.list .member {
-    background-color: var(--primary);
+.list .member,
+.grid .selected-member {
     padding: .7rem;
-    border-radius: 6px;
+}
+
+.grid .member,
+.list .member,
+.event-section,
+.current-weather-section,
+.three-day-weather-forecast-section,
+.grid .selected-member {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.grid .member,
+.list .member,
+.event-section div,
+.weather-forecast-heading,
+.grid .selected-member,
+#callToAction {
+    background-color: var(--primary);
+}
+
+.grid .member,
+.list .member,
+.grid .selected-member {
+    border-radius: 6px;
 }
 
 .list .member {
@@ -306,20 +522,31 @@ footer p {
     border-radius: 0px;
 }
 
-.list .member:nth-of-type(1) {
+.list .member:nth-of-type(1),
+.events-heading,
+.current-weather-heading,
+.weather-forecast-heading {
     border-radius: 6px 6px 0px 0px;
 }
 
-.list .member:last-of-type {
+.list .member:last-of-type,
+.event-section div:last-of-type,
+.current-weather-box,
+#weatherForecastDataBox {
     border-radius: 0px 0px 6px 6px;
 }
 
-.list .member:nth-of-type(odd) {
+.list .member:nth-of-type(odd),
+.event-section div:nth-of-type(odd),
+.current-weather-box {
     background-color: var(--accent1);
 }
 
 .list .member:nth-of-type(odd) h2,
-.list .member:nth-of-type(odd) a {
+.list .member:nth-of-type(odd) a,
+.event-section div,
+.event-section div a,
+.current-weather-data-box span {
     color: var(--secondary);
 }
 
@@ -327,16 +554,27 @@ footer {
     padding: 1rem 1rem 2rem;
 }
 
+.home-intro-heading,
+.event-section div h2,
 footer p {
     line-height: 1.6;
 }
 
+.home-heading,
+.event-section,
+.event-section div p:nth-of-type(4),
 .business-directory-heading,
 .chamber-of-commerce-info, 
-.class-project-info {
+.class-project-info,
+#callToAction {
     margin-top: 1rem;
 }
 
+.current-weather-heading,
+.weather-forecast-heading,
+.company-spotlights-section {
+    margin-top: 1.25rem;
+}
 .chamber-of-commerce-social-media {
     max-width: fit-content;
     margin-top: 1.4rem;
