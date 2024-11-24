@@ -25,18 +25,51 @@ async function getCurrentWeather() {
 getCurrentWeather();
 
 function displayCurrentWeather(data) {
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    let desc = data.weather[0].description;
-    let humidity = data.main.humidity;
-    weatherIcon.setAttribute("src", iconsrc);
-    weatherIcon.setAttribute("alt", data.weather[0].description);
-    weatherIcon.setAttribute("loading", "lazy");
-    currentTemp.innerHTML = `<b>${data.main.temp.toFixed(0)}&deg;</b>C`;
-    weatherDesc.textContent = `${desc}`;
-    tempMax.innerHTML = `High: ${data.main.temp_max.toFixed(0)}&deg;`;
-    tempMin.innerHTML = `Low: ${data.main.temp_min.toFixed(0)}&deg;`;
-    humidityInfo.textContent = `Humidity: ${humidity}%`;
+  document.querySelector(".current-weather-info").innerHTML = "";
+  let weatherBox = document.createElement("div");
+  weatherBox.classList.add("current-weather-box");
+  let weatherIcon = document.createElement("img");
+  weatherIcon.setAttribute("id", "weatherIcon");
+  let weatherDataBox = document.createElement("div");
+  weatherDataBox.classList.add("current-weather-data-box");
+  let currentTemp = document.createElement("span");
+  currentTemp.setAttribute("id", "currentTemp");
+  let weatherDesc = document.createElement("span");
+  weatherDesc.setAttribute("id", "weatherDescription");
+  let tempMax = document.createElement("span");
+  tempMax.setAttribute("id", "high");
+  let tempMin = document.createElement("span");
+  tempMin.setAttribute("id", "low");
+  let humidityInfo = document.createElement("span");
+  humidityInfo.setAttribute("id", "humidity");
+
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  let desc = data.weather[0].description;
+  let humidity = data.main.humidity;
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", data.weather[0].description);
+  weatherIcon.setAttribute("loading", "lazy");
+  currentTemp.innerHTML = `<b>${data.main.temp.toFixed(0)}&deg;</b>C`;
+  weatherDesc.textContent = `${desc}`;
+  tempMax.innerHTML = `High: ${data.main.temp_max.toFixed(0)}&deg;`;
+  tempMin.innerHTML = `Low: ${data.main.temp_min.toFixed(0)}&deg;`;
+  humidityInfo.textContent = `Humidity: ${humidity}%`;
+
+  weatherDataBox.appendChild(currentTemp);
+  weatherDataBox.appendChild(weatherDesc);
+  weatherDataBox.appendChild(tempMax);
+  weatherDataBox.appendChild(tempMin);
+  weatherDataBox.appendChild(humidityInfo);
+
+  weatherBox.appendChild(weatherIcon);
+  weatherBox.appendChild(weatherDataBox);
+
+  document.querySelector(".current-weather-info").appendChild(weatherBox);
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+  document.querySelector(".current-weather-info");
+});
 
 const weatherForecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=42.29157919378453&lon=18.840046948534674&units=metric&appid=12f91a41bd21c1ca9341109b7e228eab";
 
