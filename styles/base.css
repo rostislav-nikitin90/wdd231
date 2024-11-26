@@ -45,7 +45,9 @@ header,
 .courses-button-container,
 #coursesContainer,
 .course-box,
-.credits-info-box {
+.credits-info-box,
+dialog,
+dialog button {
     background-color: var(--white);
 }
 
@@ -100,7 +102,9 @@ h1,
 .budva-heading,
 .figure-budva,
 .course-name,
-.credits-info {
+.credits-info,
+#courseDetails,
+dialog button {
     color: var(--darkbrown);
 }
 
@@ -230,7 +234,8 @@ main section {
 }
 
 .course-work-section, 
-.courses-section {
+.courses-section,
+#courseDetails h2 {
     background-color: var(--beige);
 }
 
@@ -242,6 +247,13 @@ main section {
 
 .course-work-heading, .courses-heading {
     border: 5px solid var(--darkbrown);
+}
+
+.budva-heading,
+#budvaOldTown,
+.course-work-heading,
+.courses-heading,
+#courseDetails h2 {
     border-radius: 6px 6px 0px 0px;
 }
 
@@ -278,7 +290,6 @@ main section {
     border-right: 1px solid var(--white);
     border-left: 1px solid var(--white);
     border-bottom: none;
-    border-radius: 6px 6px 0px 0px;
     padding-top: 1rem;
     z-index: 1;
 }
@@ -290,7 +301,6 @@ main section {
     border-right: 1px solid var(--white);
     border-left: 1px solid var(--white);
     border-bottom: none;
-    border-radius: 6px; 
 }
 
 .figure-budva figcaption {
@@ -299,7 +309,6 @@ main section {
     border-right: 1px solid var(--white);
     border-left: 1px solid var(--white);
     border-bottom: none;
-    border-radius: 6px;
     padding: 0rem 0rem .5rem 0rem;
 }
 
@@ -308,15 +317,21 @@ main section {
     border-right: 1px solid var(--white);
     border-left: 1px solid var(--white);
     border-bottom: none;
-    border-radius: 6px 6px 0px 0px; 
 }
 
 .courses-button-container button {
     padding: 1.125rem 0rem;
-    border-radius: 6px; 
     border: none;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     cursor: pointer;
+}
+
+.figure-budva,
+.figure-budva figcaption,
+.courses-button-container button,
+dialog,
+dialog button {
+    border-radius: 6px;
 }
 
 .courses-button-container button:hover {
@@ -372,6 +387,26 @@ main section {
 .course-box {
     margin-bottom: 1.2rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+.course-box:hover,
+.course-box.completed:hover  {
+    background-color: var(--beige);
+}
+
+.course-box:hover > p {
+    color: var(--darkbrown);
+}
+
+.course-box:active,
+.course-box.completed:active {
+    background-color: var(--white);
+    border: 1px solid var(--darkbrown);
+}
+
+.course-box:active > p {
+    color: var(--darkbrown);
 }
 
 .course-box.completed {
@@ -388,6 +423,52 @@ main section {
 
 .credits-info-box {
     padding-top: 1.2rem;
+}
+
+dialog {
+    border: none;
+    padding: 1.6rem;
+    margin: 0 auto;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    font-size: 1.188rem;
+    font-weight: 600;
+    position : absolute;
+    top: 26px;
+    right: 26px;
+    padding: .6rem 1rem .5rem;
+    border: 1px solid var(--beige);
+    cursor: pointer;
+}
+
+dialog button:hover {
+    color: var(--white);
+    background-color: var(--darkbrown);
+}
+
+dialog button:active {
+    color: var(--darkbrown);
+    background-color: var(--white);
+    border: 1px solid var(--darkbrown);
+}
+
+#courseDetails p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+#courseDetails p:nth-of-type(3) {
+    padding: .5rem 0rem .5rem;
+}
+
+#courseDetails h3 {
+    font-size: 1.17rem;
+    padding: 1.2rem 0rem .5rem;
 }
 
 footer {
@@ -596,6 +677,10 @@ footer {
         margin-bottom: 0rem;
     }
 
+    dialog {
+        max-width: 768px;
+    }
+
     footer {
         display: grid;
         grid-template-rows: auto;
@@ -723,9 +808,12 @@ footer {
         grid-template-columns: 60.5% auto;
         gap: 2rem;
     }
-
     main section {
         border-radius: 6px;
+    }
+
+    main section,
+    dialog {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
@@ -806,6 +894,11 @@ footer {
         max-height: 50px;
         padding: .8rem;
         margin-bottom: 0rem;
+    }
+
+    dialog {
+        max-width: 960px;
+        /* margin: 0 auto; */
     }
 
     footer {

@@ -5,7 +5,7 @@ const currentTemp = document.querySelector("#currentTemp");
 const weatherIcon = document.querySelector("#weatherIcon");
 const weatherDesc = document.querySelector("#weatherDescription");
 
-const url = "//api.openweathermap.org/data/2.5/weather?lat=42.29157919378453&lon=18.840046948534674&units=metric&appid=12f91a41bd21c1ca9341109b7e228eab";
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=42.29157919378453&lon=18.840046948534674&units=metric&appid=12f91a41bd21c1ca9341109b7e228eab";
 
 hamButton.addEventListener("click", () => {
 	navigation.classList.toggle("open");
@@ -131,13 +131,15 @@ function createCourseBox(filteredCourses) {
             box.classList.add("completed");
             name.classList.add("completed-text-white");
         }
-    
-
         name.innerHTML = `<span>${course.subject} ${course.number}</span>`;
 
         box.appendChild(name);
 
         document.querySelector("#coursesContainer").appendChild(box);
+
+        box.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
     });
 }
 
@@ -198,3 +200,24 @@ wddcoursesbtn.addEventListener("click", () => {
     csecoursesbtn.classList.add("courses-btn-default-bg-color");
     csecoursesbtn.classList.remove("courses-btn-dark-brown-bg-color");
 });
+
+const courseDetails = document.querySelector("#courseDetails");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">✕</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+     `;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+    courseDetails.close();
+    });
+}
