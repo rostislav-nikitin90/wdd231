@@ -49,6 +49,8 @@ header,
 .events-heading,
 .current-weather-heading,
 #weatherForecastDataBox,
+.membership-levels-heading,
+.membership-application-form-container,
 footer {
     background-color: var(--accent3);
 }
@@ -69,12 +71,10 @@ h1 {
 
 h1, 
 .logo-text,
-h2 {
+h2,
+h3,
+h4 {
     font-family: "Poppins", serif;
-}
-
-p {
-    color: var(--secondary);
 }
 
 .logo-text {
@@ -93,19 +93,24 @@ nav {
 .grid .selected-member h2,
 .events-heading,
 .current-weather-heading,
-.weather-forecast-heading {
+.weather-forecast-heading,
+.membership-application-form-heading,
+.membership-levels-heading,
+#membershipLevelsContainer div {
     text-align: center;
 }
 
 .navigation a,
 .button-box button,
-#callToAction {
+#callToAction,
+#membershipLevelsContainer div a,
+.close:hover,
+.close:focus {
     text-decoration: none;
 }
 
 .navigation a {
     font-size: 1.25rem;
-    text-decoration: none;
     display: none;
 }
 
@@ -120,7 +125,9 @@ nav {
 a, 
 p, 
 button, 
-span {
+span,
+li,
+form {
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -140,6 +147,9 @@ h1,
 .events-heading,
 .current-weather-heading,
 #weatherForecastDataBox p,
+.membership-levels-heading,
+.form-box2 label,
+input[type="submit"],
 footer p {
     color: var(--primary);
 }
@@ -263,21 +273,33 @@ nav ul li.active a {
 
 .events-heading,
 .current-weather-heading,
-.weather-forecast-heading {
+.weather-forecast-heading,
+.membership-levels-heading {
     font-weight: 400;
     padding: .5rem;
 }
 
-.current-weather-data-box span {
-    display: block;
+.current-weather-data-box span,
+#modalTitle {
     padding-bottom: .5rem;
 }
 
-.event-section div p span {
+.current-weather-data-box span,
+.form-box2 label, 
+input,
+input[type="submit"],
+select,
+textarea {
+    display: block;
+}
+
+.event-section div p span,
+.form-box2 label {
     font-weight: 700;
 }
 
-.event-section div {
+.event-section div,
+#submittedFormData {
     padding: .7rem .7rem .9rem;
 }
 
@@ -315,7 +337,9 @@ nav ul li.active a {
 
 .event-section,
 .current-weather-section,
-.three-day-weather-forecast-section {
+.three-day-weather-forecast-section,
+.membership-levels-info-section,
+.membership-application-form-section {
     border-radius: 10px 10px 6px 6px;
 }
 
@@ -329,12 +353,14 @@ nav ul li.active a {
     margin-right: auto;
 }
 
-/* directory page */
 .home-heading,
-.business-directory-heading {
+.business-directory-heading,
+.intro-to-membership-heading,
+.thank-you-heading {
     font-size: 1.5rem;
 }
 
+/* directory page */
 .button-box {
     display: grid;
     grid-template-rows: auto;
@@ -357,28 +383,37 @@ nav ul li.active a {
 .events-heading,
 .current-weather-heading,
 .weather-forecast-heading,
-#callToAction {
+#callToAction,
+.membership-levels-heading,
+.membership-application-form-heading,
+#modalTitle {
     font-size: 1.375rem;
 }
 
 .button-box button,
 #callToAction {
-    font-weight: 500;
     padding: 1.125rem 0rem;
-    border: 1px solid var(--accent3);
+}
+
+.button-box button,
+#callToAction,
+#membershipLevelsContainer div a {
+    font-weight: 500;
     border-radius: 6px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     cursor: pointer;
 }
 
 .button-box button:hover,
-#callToAction:hover {
+#callToAction:hover,
+#membershipLevelsContainer div a:hover {
     color: var(--primary);
     background-color: var(--accent3);
 }
 
 .button-box button:active,
-#callToAction:active {
+#callToAction:active,
+#membershipLevelsContainer div a:active {
     color: var(--accent3);
     background-color: var(--primary);
     border: 2px solid var(--accent3);
@@ -428,9 +463,18 @@ nav ul li.active a {
 .event-section div p,
 .event-section div a,
 span,
+.membership-info-section div p,
 .grid .selected-member h2,
 .grid .selected-member p,
 .grid .selected-member a,
+.modal-content p,
+.modal-content h4,
+.modal-content ul li,
+#membershipLevelsContainer div h3,
+.form-box2 label,
+#submittedFormData h3,
+#submittedFormData a, 
+p,
 footer p {
     font-size: .938rem;
 }
@@ -438,15 +482,20 @@ footer p {
 .grid .member h2,
 .list ul li h2,
 .event-section div h2,
-.grid .selected-member h2 {
+.grid .selected-member h2,
+#submittedFormData h3 {
     margin-bottom: .3rem;
 }
 
 .grid .member p,
 .list ul li p,
 .event-section div p,
+.membership-info-section div p,
 #weatherForecastDataBox p,
-.grid .selected-member p {
+.grid .selected-member p,
+.modal-content p,
+.modal-content ul li,
+#submittedFormData p {
     line-height: 1.7;
 }
 
@@ -468,6 +517,7 @@ footer p {
 
 .home-heading,
 .business-directory-heading,
+.intro-to-membership-heading,
 .grid .member h2,
 .grid .member a,
 .list ul li,
@@ -477,7 +527,15 @@ footer p {
 .weather-forecast-heading,
 .grid .selected-member h2, 
 .grid .selected-member a,
-#callToAction {
+#callToAction,
+.membership-application-form-heading,
+#modalTitle,
+#membershipLevelsContainer div h3,
+#membershipLevelsContainer div a,
+input[type="submit"],
+#submittedFormData a,
+#submittedFormData h3,
+.thank-you-heading {
     color: var(--accent3);
 }
 
@@ -487,7 +545,10 @@ footer p {
 
 .grid .member,
 .list .member,
-.grid .selected-member {
+.grid .selected-member,
+.membership-intro-box,
+.form-box,
+.modal-content {
     padding: .7rem;
 }
 
@@ -496,7 +557,11 @@ footer p {
 .event-section,
 .current-weather-section,
 .three-day-weather-forecast-section,
-.grid .selected-member {
+.grid .selected-member,
+.membership-intro-box,
+.membership-levels-info-section,
+.membership-application-form-section,
+#submittedFormData {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -505,13 +570,26 @@ footer p {
 .event-section div,
 .weather-forecast-heading,
 .grid .selected-member,
-#callToAction {
+#callToAction,
+.membership-application-form-heading,
+.modal-content,
+input,
+#membershipLevelsContainer div,
+input[type="submit"],
+#submittedFormData {
     background-color: var(--primary);
 }
 
 .grid .member,
 .list .member,
-.grid .selected-member {
+.grid .selected-member,
+.membership-intro-box,
+dialog,
+#membershipLevelsContainer div,
+.form-box2 input,
+select,
+textarea,
+#submittedFormData {
     border-radius: 6px;
 }
 
@@ -525,29 +603,226 @@ footer p {
 .list .member:nth-of-type(1),
 .events-heading,
 .current-weather-heading,
-.weather-forecast-heading {
+.weather-forecast-heading,
+.membership-levels-heading,
+.membership-application-form-heading {
     border-radius: 6px 6px 0px 0px;
 }
 
 .list .member:last-of-type,
 .event-section div:last-of-type,
 .current-weather-box,
-#weatherForecastDataBox {
+#weatherForecastDataBox,
+#membershipLevelsContainer,
+.form-box,
+.membership-application-form-container {
     border-radius: 0px 0px 6px 6px;
 }
 
 .list .member:nth-of-type(odd),
 .event-section div:nth-of-type(odd),
-.current-weather-box {
+.current-weather-box,
+.membership-intro-box,
+#membershipLevelsContainer {
     background-color: var(--accent1);
 }
 
+p,
 .list .member:nth-of-type(odd) h2,
 .list .member:nth-of-type(odd) a,
 .event-section div,
 .event-section div a,
-.current-weather-data-box span {
+.current-weather-data-box span,
+select,
+.modal-content h4,
+.modal-content ul li,
+.close:hover,
+.close:focus {
     color: var(--secondary);
+}
+
+/* join page */
+.intro-to-membership-heading,
+.thank-you-heading {
+    margin-top: .8rem;
+} 
+
+.intro-to-membership-heading,
+.membership-application-form-heading,
+.thank-you-heading {
+    line-height: 1.4;
+}
+
+.membership-application-form-heading {
+    padding: .3rem;
+}
+
+.membership-application-form-container,
+.form-box  {
+    width: auto;
+}
+
+.form-box2 input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    margin: .3rem 0rem 1rem;
+    padding: .85rem .5rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    width: 100%;
+}
+
+select:focus > option:checked {
+    background: var(--accent1);
+}
+
+.form-box2 textarea {
+    height: 150px;
+}
+
+#submittedFormData p:last-of-type {
+    padding-top: 1rem;
+}
+
+#membershipLevelsContainer {
+    position: relative;
+    padding: .7rem 0rem .7rem;
+}
+
+#membershipLevelsContainer div {
+    opacity: 0;
+    margin: 0rem .7rem .7rem;
+    padding: 1rem .5rem 2rem;
+    animation: slideUp 1s forwards;
+}
+
+#membershipLevelsContainer div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#membershipLevelsContainer div:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+#membershipLevelsContainer div:nth-child(3) {
+    animation-delay: 1s;
+}
+
+#membershipLevelsContainer div:last-of-type {
+    margin: 0rem .7rem 0rem;
+    animation-delay: 1.5s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        top: 20px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+#membershipLevelsContainer div h3 {
+    margin-bottom: .7rem;
+}
+
+.button-box button,
+#callToAction,
+#membershipLevelsContainer div a,
+input[type="submit"] {
+    border: 1px solid var(--accent3);
+}
+
+input[type="submit"] {
+    margin: .3rem 0rem .2rem;
+}
+
+#membershipLevelsContainer div a,
+input[type="submit"] {
+    display: inline-block;
+    font-size: 1rem;
+    height: 44.47px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent1);
+    color: var(--secondary);
+    border: var(--accent1);
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background-color: var(--primary);
+    color: var(--accent3);
+    border: 2px solid var(--accent3);
+}
+
+.form-box2 input:required, 
+select:required {
+    border-left: 3px solid red;
+}
+
+.form-box2 input:required:valid, 
+select:required:valid {
+    border-left: 3px solid green;
+}
+
+#membershipLevelsContainer div a {
+    padding: .73rem 1rem .60rem;
+}
+
+dialog,
+.modal-content {
+    margin: 0 auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+dialog,
+.modal-content, 
+.close {
+    border: none;
+}
+
+.modal-content h4 {
+    padding-top: .7rem;
+}
+
+#modalCoreBenefits li,
+#modalBenefits li {
+    list-style-type: disc;
+    margin-left: 1.125rem;
+    padding-top: .6rem;
+}
+
+#modalCoreBenefits li:last-of-type,
+#modalBenefits li:last-of-type {
+    padding-bottom: .4rem;
+}
+
+.close {
+    color: var(--accent1);
+    float: right;
+    font-size: 1.75rem;
+    font-weight: 600;
+    background: none;
+    cursor: pointer;
+}
+
+.membership-application-form-heading,
+#modalTitle {
+    font-weight: 400;
 }
 
 footer {
@@ -564,15 +839,19 @@ footer p {
 .event-section,
 .event-section div p:nth-of-type(4),
 .business-directory-heading,
+.membership-info-section,
 .chamber-of-commerce-info, 
 .class-project-info,
-#callToAction {
+#callToAction,
+#submittedFormData {
     margin-top: 1rem;
 }
 
 .current-weather-heading,
 .weather-forecast-heading,
-.company-spotlights-section {
+.company-spotlights-section,
+.membership-levels-heading,
+.membership-application-form-heading {
     margin-top: 1.25rem;
 }
 .chamber-of-commerce-social-media {

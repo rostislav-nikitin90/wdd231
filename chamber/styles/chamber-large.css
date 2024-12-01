@@ -126,7 +126,8 @@
     }
 
     .three-day-weather-forecast-section,
-    #weatherForecastDataBox {
+    #weatherForecastDataBox,
+    .membership-levels-info-section {
         background-color: var(--accent1);
     }
 
@@ -273,6 +274,58 @@
     .list ul li a {
         grid-row: 2 / 3;
         grid-column: 4 / 5;
+    }
+
+    /* join page */
+    .main-membership-info-container {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 65% auto;
+        gap: 1.25rem;
+    }
+
+    .intro-to-membership-heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    .membership-info-section {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .membership-application-form-section {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .membership-levels-info-section {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .membership-application-form-heading {
+        line-height: 1.15;
+        padding: .5rem;
+    }
+
+    .membership-info-section,
+    .membership-levels-heading, 
+    .membership-application-form-heading {
+        margin-top: 0rem;
+    }
+
+    #membershipLevelsContainer div {
+        margin: 0rem .7rem 2.4rem;
+    }
+
+    .form-box2 textarea {
+        height: 100px;
+        line-height: 1.7;
+    }
+
+    dialog {
+        max-width: 748px;
     }
 
     footer p {
@@ -511,7 +564,8 @@
     }
 
     .three-day-weather-forecast-section,
-    #weatherForecastDataBox {
+    #weatherForecastDataBox,
+    .membership-levels-info-section {
         background-color: var(--accent1);
     }
 
@@ -600,6 +654,64 @@
         grid-row: 1 / 2;
         grid-column: 5 / 6;
         margin-top: .5rem;
+    }
+
+    /* join page */
+    .main-membership-info-container {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto 60%;
+        gap: 1.25rem;
+    }
+
+    .intro-to-membership-heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    .membership-info-section {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .membership-application-form-section {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .membership-levels-info-section {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .membership-application-form-heading {
+        line-height: 1.15;
+        padding: .5rem;
+    }
+
+    .membership-info-section,
+    .membership-levels-heading, 
+    .membership-application-form-heading {
+        margin-top: 0rem;
+    }
+
+    #membershipLevelsContainer div {
+        margin: 0rem .7rem 2.4rem;
+    }
+
+    .form-box2 textarea {
+        height: 80px;
+        line-height: 1.7;
+    }
+
+    .form-box2 input, 
+    select, 
+    textarea {
+        padding: .5rem;
+    }
+
+    dialog {
+        max-width: 980px;
     }
 
     footer p {
