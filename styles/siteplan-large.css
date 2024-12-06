@@ -1,0 +1,34 @@
+/* This is the CSS styling for the tablet version */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        max-width: 764px;
+    }
+}
+
+/* This is the CSS styling for the desktop version */
+@media only screen and (min-width: 1025px) {
+    body {
+        height: 100vh;
+    }
+
+    #menuButton {
+		display: none; /* hide hamburger button for the desktop view*/
+	}
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding: 0rem;
+        margin: .8rem 2.4rem .8rem 2.4rem;
+    }
+
+    main {
+        max-width: 1100px;
+    }
+}
