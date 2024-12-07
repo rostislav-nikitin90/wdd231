@@ -20,6 +20,8 @@ img {
 
 img,
 main,
+aside,
+.discover-budva-heading-container,
 footer {
     animation: blur 4s;
 }
@@ -37,7 +39,8 @@ ul {
 #headerContainer,
 .navigation a,
 #mainContainer,
-.main-content-container {
+.main-content-container,
+#discoverMainContainer {
     padding: 1rem;
 }
 
@@ -51,6 +54,10 @@ header,
 #weatherForecastDataBox,
 .membership-levels-heading,
 .membership-application-form-container,
+.city-facts-heading,
+.statistics-heading,
+.demographics-budva-container,
+.demographics-box,
 footer {
     background-color: var(--accent3);
 }
@@ -73,7 +80,8 @@ h1,
 .logo-text,
 h2,
 h3,
-h4 {
+h4,
+#timeBetweenPageVisitsMessage span {
     font-family: "Poppins", serif;
 }
 
@@ -96,7 +104,11 @@ nav {
 .weather-forecast-heading,
 .membership-application-form-heading,
 .membership-levels-heading,
-#membershipLevelsContainer div {
+#membershipLevelsContainer div,
+.city-facts-heading,
+.demographics-heading,
+.statistics-heading,
+figure {
     text-align: center;
 }
 
@@ -105,7 +117,9 @@ nav {
 #callToAction,
 #membershipLevelsContainer div a,
 .close:hover,
-.close:focus {
+.close:focus,
+.close-btn:hover,
+.close-btn:focus {
     text-decoration: none;
 }
 
@@ -127,7 +141,8 @@ p,
 button, 
 span,
 li,
-form {
+form,
+figure {
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -150,6 +165,9 @@ h1,
 .membership-levels-heading,
 .form-box2 label,
 input[type="submit"],
+.city-facts-heading,
+.statistics-heading,
+.demographics-box p,
 footer p {
     color: var(--primary);
 }
@@ -274,7 +292,10 @@ nav ul li.active a {
 .events-heading,
 .current-weather-heading,
 .weather-forecast-heading,
-.membership-levels-heading {
+.membership-levels-heading,
+.city-facts-heading,
+.demographics-heading,
+.statistics-heading {
     font-weight: 400;
     padding: .5rem;
 }
@@ -294,7 +315,10 @@ textarea {
 }
 
 .event-section div p span,
-.form-box2 label {
+.form-box2 label,
+.city-facts-box p span,
+.demographics-box p span,
+.statistics-box p span {
     font-weight: 700;
 }
 
@@ -327,11 +351,20 @@ textarea {
     text-transform: capitalize;
 }
 
-#weatherForecastDataBox {
+#weatherForecastDataBox,
+.city-facts-box,
+.demographics-box,
+.statistics-box {
     padding: .5rem .7rem .9rem;
 }
 
-#weatherForecastDataBox p {
+#weatherForecastDataBox p,
+.city-facts-box p, 
+.city-facts-box p span,
+.demographics-box p,
+.demographics-box p span,
+.statistics-box p,
+.statistics-box p span {
     font-size: 1.125rem;
 }
 
@@ -339,7 +372,10 @@ textarea {
 .current-weather-section,
 .three-day-weather-forecast-section,
 .membership-levels-info-section,
-.membership-application-form-section {
+.membership-application-form-section,
+.city-facts-budva-container,
+.demographics-budva-container,
+.statistics-budva-container {
     border-radius: 10px 10px 6px 6px;
 }
 
@@ -386,7 +422,10 @@ textarea {
 #callToAction,
 .membership-levels-heading,
 .membership-application-form-heading,
-#modalTitle {
+#modalTitle,
+.city-facts-heading,
+.demographics-heading,
+.statistics-heading {
     font-size: 1.375rem;
 }
 
@@ -475,6 +514,8 @@ span,
 #submittedFormData h3,
 #submittedFormData a, 
 p,
+figure,
+#timeBetweenPageVisitsMessage span,
 footer p {
     font-size: .938rem;
 }
@@ -495,7 +536,10 @@ footer p {
 .grid .selected-member p,
 .modal-content p,
 .modal-content ul li,
-#submittedFormData p {
+#submittedFormData p,
+.city-facts-box p,
+.demographics-box p,
+.statistics-box p {
     line-height: 1.7;
 }
 
@@ -535,7 +579,11 @@ footer p {
 input[type="submit"],
 #submittedFormData a,
 #submittedFormData h3,
-.thank-you-heading {
+.thank-you-heading,
+.discover-budva-heading,
+.demographics-heading,
+#timeBetweenPageVisitsMessage,
+.close-btn {
     color: var(--accent3);
 }
 
@@ -561,7 +609,12 @@ input[type="submit"],
 .membership-intro-box,
 .membership-levels-info-section,
 .membership-application-form-section,
-#submittedFormData {
+#submittedFormData,
+figure,
+.city-facts-budva-container,
+.demographics-budva-container,
+.statistics-budva-container,
+#timeBetweenPageVisitsMessage {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -576,7 +629,11 @@ input[type="submit"],
 input,
 #membershipLevelsContainer div,
 input[type="submit"],
-#submittedFormData {
+#submittedFormData,
+.demographics-heading,
+figure,
+figcaption,
+#timeBetweenPageVisitsMessage {
     background-color: var(--primary);
 }
 
@@ -589,7 +646,9 @@ dialog,
 .form-box2 input,
 select,
 textarea,
-#submittedFormData {
+#submittedFormData,
+figure,
+#timeBetweenPageVisitsMessage {
     border-radius: 6px;
 }
 
@@ -605,7 +664,11 @@ textarea,
 .current-weather-heading,
 .weather-forecast-heading,
 .membership-levels-heading,
-.membership-application-form-heading {
+.membership-application-form-heading,
+.budva-discover-image,
+.city-facts-heading,
+.demographics-heading,
+.statistics-heading {
     border-radius: 6px 6px 0px 0px;
 }
 
@@ -615,7 +678,11 @@ textarea,
 #weatherForecastDataBox,
 #membershipLevelsContainer,
 .form-box,
-.membership-application-form-container {
+.membership-application-form-container,
+.city-facts-box,
+.demographics-box,
+.statistics-box,
+figcaption {
     border-radius: 0px 0px 6px 6px;
 }
 
@@ -623,7 +690,11 @@ textarea,
 .event-section div:nth-of-type(odd),
 .current-weather-box,
 .membership-intro-box,
-#membershipLevelsContainer {
+#membershipLevelsContainer,
+.city-facts-budva-container,
+.city-facts-box,
+.statistics-budva-container,
+.statistics-box {
     background-color: var(--accent1);
 }
 
@@ -637,7 +708,10 @@ select,
 .modal-content h4,
 .modal-content ul li,
 .close:hover,
-.close:focus {
+.close:focus,
+.close-btn:hover,
+.close-btn:focus,
+figure {
     color: var(--secondary);
 }
 
@@ -791,7 +865,8 @@ dialog::backdrop {
 
 dialog,
 .modal-content, 
-.close {
+.close,
+.close-btn {
     border: none;
 }
 
@@ -825,12 +900,95 @@ dialog,
     font-weight: 400;
 }
 
+/* discover page */
+.discover-budva-heading {
+    padding: 1rem 1rem 0rem;
+}
+
+figure {
+    position: relative;
+    max-width: max-content;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+figure:last-of-type {
+    margin-bottom: .25rem;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .4rem 0rem 1.1rem;
+}
+
+.zoom-effect {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem .25rem;
+}
+
+aside div:last-child {
+    flex-grow: 1;
+    margin-bottom: .2rem;
+}
+
+#timeBetweenPageVisitsMessage {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 14px;
+    font-weight: 700;
+    padding: .45rem .7rem;
+}
+
+#messageText {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    margin-right: .3rem;
+}
+
+.close-btn {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 1.063rem;
+    font-weight: 600;
+    background: none;
+    margin-top: .1rem;
+    cursor: pointer;
+}
+
+figure,
+#timeBetweenPageVisitsMessage {
+    margin-bottom: 1.25rem;
+}
+
+.city-facts-box p,
+.demographics-box p,
+.statistics-box p {
+    padding-bottom: 1rem;
+}
+
+.city-facts-box p:last-of-type,
+.demographics-box p:last-of-type,
+.statistics-box p:last-of-type {
+    padding-bottom: 0rem;
+}
+
 footer {
     padding: 1rem 1rem 2rem;
 }
 
 .home-intro-heading,
 .event-section div h2,
+#timeBetweenPageVisitsMessage,
 footer p {
     line-height: 1.6;
 }
@@ -843,7 +1001,10 @@ footer p {
 .chamber-of-commerce-info, 
 .class-project-info,
 #callToAction,
-#submittedFormData {
+#submittedFormData,
+.discover-budva-heading,
+#timeBetweenPageVisitsMessage,
+.city-facts-budva-container {
     margin-top: 1rem;
 }
 
@@ -851,7 +1012,9 @@ footer p {
 .weather-forecast-heading,
 .company-spotlights-section,
 .membership-levels-heading,
-.membership-application-form-heading {
+.membership-application-form-heading,
+.demographics-budva-container,
+.statistics-budva-container {
     margin-top: 1.25rem;
 }
 .chamber-of-commerce-social-media {

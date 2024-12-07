@@ -328,6 +328,67 @@
         max-width: 748px;
     }
 
+    /* discover page */
+    .sidebar-layout-grid {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto 236.2px 475.8px auto;
+        column-gap: 1.25rem;
+    }
+
+    .header-discover-page {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+    }
+
+    .discover-budva-heading-container {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+    }
+
+    aside {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    #discoverMainContainer {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+    }
+
+    #discoverMainContainer,
+    aside {
+        padding: 1.25rem 0rem .8rem;
+    }
+
+    .discover-budva-heading {
+        padding: 1rem 0rem 0rem;
+    }
+
+    .city-facts-budva-container {
+        margin-top: 0rem
+    }
+
+    figure,
+    .city-facts-budva-container,
+    .demographics-budva-container {
+        margin-bottom: 2.4rem;
+    }
+
+    .demographics-budva-container, 
+    .statistics-budva-container {
+        margin-top: 0rem;
+    }
+
+    #timeBetweenPageVisitsMessage {
+        margin: 0rem 0rem 2.4rem;
+    }
+
+    footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / 5;
+    }
+
     footer p {
         font-size: .875rem;
     }
@@ -714,6 +775,67 @@
         max-width: 980px;
     }
 
+    /* discover page */
+    .sidebar-layout-grid {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto 407.2px 640.8px auto;
+        column-gap: 1.25rem;
+    }
+
+    .header-discover-page {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+    }
+
+    .discover-budva-heading-container {
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+    }
+
+    aside {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+
+    #discoverMainContainer {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+    }
+
+    footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / 5;
+    }
+
+    #discoverMainContainer,
+    aside {
+        padding: 1.25rem 0rem .8rem;
+    }
+
+    #timeBetweenPageVisitsMessage {
+        margin: 0rem 0rem 2.4rem;
+    }
+
+    .discover-budva-heading {
+        padding: 1rem 0rem 0rem;
+    }
+
+    .city-facts-budva-container {
+        margin-top: 0rem;
+    }
+
+    figure,
+    .city-facts-budva-container,
+    .demographics-budva-container {
+        margin-bottom: 2.4rem;
+    }
+
+    .demographics-budva-container, 
+    .statistics-budva-container {
+        margin-top: 0rem;
+    }
+
     footer p {
         font-size: .875rem;
     }
@@ -722,6 +844,10 @@
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr auto;
+    }
+
+    .zoom-effect:hover {
+        transform: scale(1.2); /* Zoom in effect */
     }
 
     .chamber-of-commerce-info {
