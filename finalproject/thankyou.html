@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website Project - Contact Page - Form Submission Confirmation Page</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Form Submission Confirmation Page for Final Website Project for WDD 231 - Web Frontend Development I at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <meta property="og:title" content="Visit Budva - Travel Guide Website Project - Student Rostislav Nikitin">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rostislav-nikitin90.github.io/wdd231/finalproject/images/budva.jpg">
+    <meta property="og:url" content="https://rostislav-nikitin90.github.io/wdd231/finalproject/home.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="scripts/submittedformdata.js"></script>
+    <script defer src="scripts/finalproject.js"></script>
+</head>
+<body>
+    <header class="blue-background-color">
+        <div id="headerContainer">
+            <div class="logo-box">
+                <img class="logo-image" src="images/visit-budva-logo.png" alt="Logo Image of Visit Budva" loading="lazy"/>
+            </div>
+            <div class="button-container">
+                <button id="menuButton" class="white-foreground-color" title="Menu"></button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/home.html" class="menu-link white-foreground-color" title="Home Page">Home</a></li>
+                    <li><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/budva.html" class="menu-link white-foreground-color" title="Budva Attractions Page">Budva</a></li>
+                    <li class="active"><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/contact.html" class="menu-link white-foreground-color" title="Contact Page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="thank-you-heading">Thank you! Your contact form has been sent successfully. We will respond to you as soon as possible.</h2>
+        <div id="submittedFormData"></div>
+    </main>
+    <footer class="white-foreground-color blue-background-color">
+        <div id="footerContainer">
+            <div class="visit-budva-info">
+                <p>Visit Budva - Travel Guide</p>
+                <p>53 Mediteranska</p>
+                <p>Budva, Montenegro 85310</p>
+                <p>info@visit-budva.com</p>
+                <p>033 900 000</p>
+            </div>
+            <div class="visit-budva-social-media">
+		        <div class="margin-right-1rem"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png" alt="Small LinkedIn Icon" loading="lazy"></a></div>
+                <div class="margin-right-1rem"><a href="https://facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="Small Facebook Icon" loading="lazy"></a></div>
+                <div><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-icon.png" alt="Small YouTube Icon" loading="lazy"></a></div>
+            </div>
+            <div class="class-project-info">
+                <p>WDD231 Final Class Project</p>
+                <p>Rostislav Nikitin</p>
+                <p>&copy; <span id="currentYear"></span> Visit Budva - Travel Guide</p>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website Project - Home Page - WDD 231 - Web Frontend Development I</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Home Page for Final Website Project for WDD 231 - Web Frontend Development I at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <meta property="og:title" content="Visit Budva - Travel Guide Website Project - Student Rostislav Nikitin">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rostislav-nikitin90.github.io/wdd231/finalproject/images/budva.jpg">
+    <meta property="og:url" content="https://rostislav-nikitin90.github.io/wdd231/finalproject/home.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script defer src="scripts/finalprojecthomepage.js"></script>
+    <script defer src="scripts/finalproject.js"></script>
+</head>
+<body>
+    <header class="blue-background-color">
+        <div class="current-weather-info white-background-color blue-foreground-color"></div>
+        <div id="headerContainer">
+            <div class="logo-box">
+                <img class="logo-image" src="images/visit-budva-logo.png" alt="Logo Image of Visit Budva" loading="lazy"/>
+            </div>
+            <div class="button-container">
+                <button id="menuButton" class="white-foreground-color" title="Menu"></button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li class="active"><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/home.html" class="menu-link white-foreground-color" title="Home Page">Home</a></li>
+                    <li><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/budva.html" class="menu-link white-foreground-color" title="Budva Attractions Page">Budva</a></li>
+                    <li><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/contact.html" class="menu-link white-foreground-color" title="Contact Page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+	    <section class="intro-section">
+            <div class="main-heading-box">
+                <h1 class="intro-heading white-foreground-color">Welcome to Budva</h1>
+            </div>
+            <div class="budva-intro-banner">
+                <picture id="budvaIntroPhoto">
+                    <source media="(min-width: 1025px)" srcset="images/budva-home-large.webp"/>
+                    <source media="(min-width: 768px)" srcset="images/budva-home-medium.webp"/>
+                    <img src="images/budva-home-small.webp" alt="View of the old town of Budva, Montenegro." loading="lazy"/>
+                </picture>
+            </div>
+        </section>
+        <div class="budva-intro-container">
+            <section class="budva-attractions-intro-section">
+                <div class="budva-attractions-intro-box">
+                    <h2 class="budva-attractions-intro-heading">Visit Budva Top Spots</h2>
+                    <p class="budva-attractions-intro-paragraph">In the embrace of the Adriatic's azure waves lies 
+                        Budva, a timeless jewel shimmering with allure. Wander through the ancient cobblestone 
+                        sreets of the Old Town. Bask in the golden embrace of Mogren beach. Whether 
+                        you are a history buff or beach lover, Budva promises an unforgettable experience.</p>
+                </div>
+            </section>
+            <section class="slideshow-section">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/budva.html"><img src="images/old-town-budva-small.webp" alt="Old Town of Budva, Montenegro."></a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/budva.html"><img src="images/mogren-beach-budva-small.webp" alt="Mogren beach, Budva, Montenegro."></a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/budva.html"><img src="images/church-of-st-john-budva-small.webp" alt="Church of St. John the Baptist, Budva."></a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/budva.html"><img src="images/promenade-budva-small.webp" alt="Budva Marina, Montenegro."></a>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+        </div>
+        <section class="budva-history-section orange-background-color">
+            <div class="budva-history-container white-foreground-color">
+                <h3 class="budva-history-heading">History</h3>
+                <p class="budva-history-paragraph1">Budva, one of the oldest settlements on the Adriatic coast, 
+                    boasts a rich history that dates back to the 5th century BC. Initially settled by 
+                    the Illyrians, an ancient Indo-European people, Budva's strategic location on 
+                    a rocky peninsula made it a vital trading hub. During the Greek colonization 
+                    of the Adriatic in the 6th century BC, a Greek emporium was established in the area. 
+                    By the 2nd century BC, Budva became part of the Roman Republic and later the Roman 
+                    Empire, flourishing as a bustling center of trade and culture. The remnants of Roman 
+                    villas, walls, and fortifications still visible today are a testament to its 
+                    significance during this era.</p>
+                <p class="budva-history-paragraph2">Throughout the Middle Ages, Budva experienced a series 
+                    of power shifts, coming under the influence of the Byzantine Empire, Slavic tribes, 
+                    and various medieval states. The Venetian Republic's arrival in the 15th century 
+                    marked a significant chapter in Budva's history, with the Venetians ruling for 
+                    around 400 years. They expanded the city's fortifications, leaving a lasting 
+                    impact on its architecture, evident in the elegant palaces, churches, and 
+                    squares that define the Old Town. Budva's history is also marked by brief 
+                    periods of Ottoman and Habsburg rule, each leaving their mark on the city's 
+                    cultural fabric.</p>
+                <picture id="budvaHistoryPhoto">
+                    <source media="(min-width: 1025px)" srcset="images/budva-history-home-large.webp"/>
+                    <source media="(min-width: 768px)" srcset="images/budva-history-home-medium.webp"/>
+                    <img src="images/budva-history-home-small.webp" alt="View of the roofs of the old town of Budva, Montenegro." loading="lazy"/>
+                </picture>
+            </div>
+        </section>
+        <section class="budva-culture-section">
+            <div class="budva-culture-container">
+                <h3 class="budva-culture-heading">Culture</h3>
+                <p class="budva-culture-paragraph1">Budva, a coastal gem in Montenegro, boasts a rich cultural 
+                    tapestry woven through centuries of history. The town's Old Town, or Stari Grad, is a maze 
+                    of narrow, cobbled streets lined with medieval stone houses, ancient churches, and 
+                    a fortress that offers stunning views of the Adriatic Sea. This area is a testament 
+                    to Budva's long history and includes influences from the Greeks, Romans, Byzantines, 
+                    and Venetians. The architectural marvels, such as the Citadel and the Church 
+                    of St. Ivan, reflect this diverse heritage and provide a picturesque backdrop 
+                    for visitors exploring the town.</p>
+
+                <p class="budva-culture-paragraph2">Budva's culture is also vibrant and lively, with numerous 
+                    festivals and events that celebrate its rich traditions and artistic expressions. 
+                    The Budva Summer Festival, for instance, features music, theater performances, and 
+                    art exhibitions, drawing crowds from near and far. Additionally, the International 
+                    Carnival brings the streets to life with colorful parades and a festive atmosphere. 
+                    These events, along with the town's delicious local cuisine and welcoming atmosphere, 
+                    offer a deep connection to Budva's heritage and make it a captivating destination for 
+                    those looking to immerse themselves in Montenegro's coastal culture.</p>
+                <picture id="budvaCulturePhoto">
+                    <source media="(min-width: 1025px)" srcset="images/budva-culture-home-large.webp"/>
+                    <source media="(min-width: 768px)" srcset="images/budva-culture-home-medium.webp"/>
+                    <img src="images/budva-culture-home-small.webp" alt="Aerial view of the old town of Budva, Montenegro." loading="lazy"/>
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer class="white-foreground-color blue-background-color">
+        <div id="footerContainer">
+            <div class="visit-budva-info">
+                <p>Visit Budva - Travel Guide</p>
+                <p>53 Mediteranska</p>
+                <p>Budva, Montenegro 85310</p>
+                <p>info@visit-budva.com</p>
+                <p>033 900 000</p>
+            </div>
+            <div class="visit-budva-social-media">
+		        <div class="margin-right-1rem"><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png" alt="Small LinkedIn Icon" loading="lazy"></a></div>
+                <div class="margin-right-1rem"><a href="https://facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="Small Facebook Icon" loading="lazy"></a></div>
+                <div><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-icon.png" alt="Small YouTube Icon" loading="lazy"></a></div>
+            </div>
+            <div class="class-project-info">
+                <p>WDD231 Final Class Project</p>
+                <p>Rostislav Nikitin</p>
+                <p><a href="https://rostislav-nikitin90.github.io/wdd231/finalproject/attributions.html">Image References</a></p>
+                <p>&copy; <span id="currentYear"></span> Visit Budva - Travel Guide</p>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

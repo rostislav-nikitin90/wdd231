@@ -1,0 +1,152 @@
+[
+    {
+      "name": "Old Town",
+      "description": "The Old Town of Budva, also known as Stari Grad, is a charming and historic area located on a small peninsula jutting into the Adriatic Sea. This ancient town-budva, dating back over 2,500 years, is one of the oldest urban centers in the Adriatic. Enclosed by medieval walls originally built by the Illyrians and later fortified by the Venetians in the 15th century, the Old Town features narrow, winding streets, picturesque squares, and historic buildings. The Old Town’s unique blend of ancient architecture and vibrant modern life makes it a must-visit destination in Budva.",
+      "location": "https://www.google.com/maps/place/Old+Town,+Budva,+Montenegro/@42.2781561,18.8352228,17z/data=!3m1!4b1!4m6!3m5!1s0x134dd4938e9cf489:0xd4af4db36e2a108b!8m2!3d42.2778443!4d18.838067!16s%2Fg%2F12lkn69ms?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/old-town-budva-large.webp",
+        "tablet": "../finalproject/images/old-town-budva-medium.webp",
+        "mobile": "../finalproject/images/old-town-budva-small.webp"
+      } 
+    },
+    {
+      "name": "Sveti Nikola Island",
+      "description": "Sveti Nikola Island, often referred to as 'Hawaii' by locals, is a picturesque island located about 1 kilometer from Budva's Old Town. The island spans approximately 2 kilometers in length and covers an area of 36 hectares. The island is known for its beautiful sandy beaches, clear waters, and lush vegetation, including dense coniferous forests. It is a popular spot for day trips, offering opportunities for swimming, sunbathing, and exploring its natural beauty. The island is also home to various wildlife, such as deer and rabbits and is accessible by traveling boats, which are popular among tourists.",
+      "location": "https://www.google.com/maps/place/Sveti+Nikola+Island/@42.2658625,18.841336,15z/data=!3m1!4b1!4m6!3m5!1s0x134dd4f6fb005111:0x4c533e92399e8a46!8m2!3d42.2638888!4d18.853663!16zL20vMGRtZzdu?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/sveti-nikola-island-budva-large.webp",
+        "tablet": "../finalproject/images/sveti-nikola-island-budva-medium.webp",
+        "mobile": "../finalproject/images/sveti-nikola-island-budva-small.webp"
+      }
+    },
+    {
+      "name": "Citadel",
+      "description": "The Citadel in Budva's Old Town is a historic fortress that dates back to the 15th century. Perched on a hill overlooking the Adriatic Sea, it offers stunning panoramic views of the coastline. The Citadel includes the remains of St. Mary’s Church, terraced gates, several squares, and former army barracks. This medieval stronghold has served as a strategic defense point throughout history, with its thick stone walls and strategically placed towers. Today, it is a popular tourist attraction, providing a glimpse into Budva's rich history and offering a beautiful setting for exploration and photography.",
+      "location": "https://www.google.com/maps/place/Budva+Citadel/@42.2771641,18.8354377,17z/data=!3m1!4b1!4m6!3m5!1s0x134dd493772f8d2f:0x59f9a50a4eab48e6!8m2!3d42.2771602!4d18.8380126!16s%2Fg%2F11dztrdd8m?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/citadel-budva-large.webp",
+        "tablet": "../finalproject/images/citadel-budva-medium.webp",
+        "mobile": "../finalproject/images/citadel-budva-small.webp"
+      }
+    },
+    {
+      "name": "Bečići Beach",
+      "description": "Bečići Beach is a stunning, 2-kilometer-long sandy beach located just 2 kilometers from Budva. Known for its golden and dark gray sand, the beach gently slopes into the clear, warm waters of the Adriatic Sea. It has been recognized for its beauty since 1935, when it won the Grand Prix in Paris as the most beautiful beach in Europe. The beach is well-equipped with amenities such as sun loungers, umbrellas, showers, and changing cabins. It is a popular destination for families, offering a safe and enjoyable environment for swimming and sunbathing.",
+      "location": "https://www.google.com/maps/place/Becici+beach/@42.2789515,18.8610684,15z/data=!3m1!4b1!4m6!3m5!1s0x134dd471dc42458b:0xd2edaee685eddfaf!8m2!3d42.2810783!4d18.8724162!16s%2Fg%2F1tf554q0?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/becici-beach-budva-large.webp",
+        "tablet": "../finalproject/images/becici-beach-budva-medium.webp",
+        "mobile": "../finalproject/images/becici-beach-budva-small.webp"
+      }
+    },
+    {
+      "name": "Church of St. John",
+      "description": "The Church of St. John the Baptist is one of the most significant landmarks in Budva's Old Town. This historic church dates back to the 7th century, with its current appearance largely shaped by renovations in the 15th century. It served as the Catholic cathedral of Budva until 1828. The church features a three-story basilica design with Gothic details on its façade. Notable elements include a belfry added in 1867 and the bishop's castle on its south side. Inside, you will find valuable artworks such as the icon of the Holy Mother of God with Christ, and paintings by Venetian and Greek artists.",
+      "location": "https://www.google.com/maps/place/The+Church+of+Sveti+Ivan+(St.+John)/@42.2774678,18.8356279,17z/data=!3m1!4b1!4m6!3m5!1s0x134dd4939c84a0d5:0xa50186a9c8379192!8m2!3d42.2774639!4d18.8382028!16s%2Fg%2F1236b5b5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/church-of-st-john-budva-large.webp",
+        "tablet": "../finalproject/images/church-of-st-john-budva-medium.webp",
+        "mobile": "../finalproject/images/church-of-st-john-budva-small.webp"
+      }
+    },
+    {
+      "name": "Slovenska Plaža",
+      "description": "Slovenska Plaža is a popular and expansive beach located in Budva. Stretching along the Adriatic coast, it offers a beautiful blend of sandy and pebbly shores, making it a favorite spot for both locals and tourists. The beach is well-equipped with amenities such as sun loungers, umbrellas, and various water sports facilities. The resort area around Slovenska Plaža is designed to resemble a Mediterranean village, complete with charming villas, lush gardens, and a variety of restaurants, cafes, and shops. It is an ideal destination for families and those looking to enjoy a relaxing day by the sea.",
+      "location": "https://www.google.com/maps/place/Slovenska+Pla%C5%BEa/@42.283352,18.8365624,15z/data=!3m1!4b1!4m6!3m5!1s0x134dd485967bdcf7:0x8c282d7002fd79ed!8m2!3d42.2848265!4d18.8481858!16s%2Fg%2F1vttzxc7?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/slovenska-plaza-budva-large.webp",
+        "tablet": "../finalproject/images/slovenska-plaza-budva-medium.webp",
+        "mobile": "../finalproject/images/slovenska-plaza-budva-small.webp"
+      }
+    },
+    {
+      "name": "Budva Promenade",
+      "description": "The Budva promenade is a lively and scenic walkway that stretches along the Adriatic coast, connecting the Old Town of Budva with the nearby beaches. This 2-kilometer-long pathway offers stunning views of the sea and the surrounding landscape. Lined with palm trees, the promenade is dotted with numerous cafes, restaurants, and shops, making it a popular spot for both locals and tourists. The promenade is perfect for a leisurely stroll, providing a relaxing atmosphere and opportunities to enjoy the vibrant coastal life of Budva. It is also a great place to catch beautiful sunsets over the Adriatic Sea.",
+      "location": "https://www.google.com/maps/place/Slovenian+coast,+Budva,+Montenegro/@42.2847357,18.8406542,17z/data=!3m1!4b1!4m6!3m5!1s0x134dd49028ee93e9:0xf70438cf8d3100f7!8m2!3d42.2847326!4d18.8426819!16s%2Fg%2F11b5pk82w0?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/promenade-budva-large.webp",
+        "tablet": "../finalproject/images/promenade-budva-medium.webp",
+        "mobile": "../finalproject/images/promenade-budva-small.webp"
+      }
+    },
+    {
+      "name": "Mogren Beach",
+      "description": "Mogren Beach is one of Budva's most beloved beaches, located just a short walk from the Old Town. It consists of two sandy beaches, Mogren I and Mogren II, connected by a picturesque tunnel through the cliffs. The beach is known for its clear turquoise waters, fine sand, and stunning natural surroundings, including rocky cliffs and lush greenery. Mogren Beach is easily accessible via a scenic coastal path, making it a popular spot for both relaxation and adventure. It is a great place for swimming, sunbathing, and enjoying the beautiful views of the Adriatic Sea.",
+      "location": "https://www.google.com/maps/place/Mogren+beach/@42.2762475,18.8225062,16z/data=!3m1!4b1!4m6!3m5!1s0x134dd49556b0caf7:0x113574be44fed3f4!8m2!3d42.2770636!4d18.83259!16s%2Fg%2F1jmd0trxd?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/mogren-beach-budva-large.webp",
+        "tablet": "../finalproject/images/mogren-beach-budva-medium.webp",
+        "mobile": "../finalproject/images/mogren-beach-budva-small.webp"
+      }
+    },
+    {
+      "name": "Sveti Stefan",
+      "description": "Sveti Stefan is a picturesque islet and luxury resort located about 6 kilometers southeast of Budva on Montenegro's Adriatic coast. Originally a fortified village built in the 15th century to defend against Turkish attacks, it has since transformed into an exclusive resort known for its stunning beauty and historical charm. The island is connected to the mainland by a narrow causeway and features charming stone villas with terracotta roofs, surrounded by lush greenery and pink sandy beaches. Sveti Stefan also includes three churches, adding to its rich cultural and religious heritage.",
+      "location": "https://www.google.com/maps/place/Saint+Stephen+Sveti+Stefan+%D0%A1%D0%B2%D0%B5%D1%82%D0%B8+%D0%A1%D1%82%D0%B5%D1%84%D0%B0%D0%BD/@42.2561312,18.8906487,17.47z/data=!4m15!1m8!3m7!1s0x134dd425fefbc6b9:0xd71be0f8fa53b610!2sSveti+Stefan,+Montenegro!3b1!8m2!3d42.2515444!4d18.8982264!16zL20vMDJ2OXF5!3m5!1s0x134dd5b820454511:0xcf19bb6e2e3a11b6!8m2!3d42.2558027!4d18.8911544!16s%2Fg%2F11kr650tk6?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/sveti-stefan-budva-large.webp",
+        "tablet": "../finalproject/images/sveti-stefan-budva-medium.webp",
+        "mobile": "../finalproject/images/sveti-stefan-budva-small.webp"
+      }
+    },
+    {
+      "name": "Fortress Walls",
+      "description": "The fortress walls of Budva's Old Town are a significant historical feature dating back to ancient times. These walls were originally constructed in the 9th century and have been fortified and expanded over the centuries, particularly during the Venetian rule in the 15th century. They encircle the entire Old Town, providing a protective barrier against invasions. The walls are connected to the Citadel and feature several defensive towers. Walking along these walls offers a unique glimpse into Budva's rich history and provides stunning views of the Adriatic Sea and the surrounding area.",
+      "location": "https://www.google.com/maps/place/City+Walls+of+Budva/@42.2772842,18.8202888,15z/data=!3m1!4b1!4m6!3m5!1s0x134dd50059325d8b:0x21276bdf012258ce!8m2!3d42.2772698!4d18.8387428!16s%2Fg%2F11vy7k_0lg?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/fortress-walls-budva-large.webp",
+        "tablet": "../finalproject/images/fortress-walls-budva-medium.webp",
+        "mobile": "../finalproject/images/fortress-walls-budva-small.webp"
+      }
+    },
+    {
+      "name": "Ričardova Glava Beach",
+      "description": "Ričardova Glava Beach, named after the actor Richard Widmark who filmed here in the 1960s, is a small but picturesque pebble beach located near Budva's Old Town. The beach offers stunning views of the Old Town walls and the Citadel, creating a unique atmosphere where history and nature blend beautifully.The water at Ričardova Glava Beach is clean and clear, making it a great spot for swimming and relaxing. The beach is conveniently located near the city center, providing easy access to cafes, restaurants, and other amenities. However, it can get crowded, especially during peak tourist season.",
+      "location": "https://www.google.com/maps/place/Pla%C5%BEa+Ri%C4%8Dardova+Glava/@42.2778503,18.8352317,18.12z/data=!4m14!1m7!3m6!1s0x134dd50059325d8b:0x21276bdf012258ce!2sCity+Walls+of+Budva!8m2!3d42.2772698!4d18.8387428!16s%2Fg%2F11vy7k_0lg!3m5!1s0x134dd494649a89f1:0x7c31589a9f469643!8m2!3d42.2778892!4d18.8364889!16s%2Fg%2F1td22dxw?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/ricardova-glava-beach-budva-large.webp",
+        "tablet": "../finalproject/images/ricardova-glava-beach-budva-medium.webp",
+        "mobile": "../finalproject/images/ricardova-glava-beach-budva-small.webp"
+      }
+    },
+    {
+      "name": "Rafailovići",
+      "description": "Rafailovići is a charming fishing village located near Bečići Beach, about 4 kilometers from Budva. This picturesque village is known for its beautiful sandy beach, which stretches approximately 2 kilometers along the Adriatic coast. Rafailovići offers a variety of amenities, including cafes, restaurants, and a marina for yachts and boats. The village is connected to Budva by a scenic coastal footpath, making it easy to explore the surrounding areas. With its Mediterranean climate and stunning views, Rafailovići is a perfect destination for a peaceful getaway.",
+      "location": "https://www.google.com/maps/place/%D0%A0%D0%B0%D1%84%D0%B0%D0%B8%D0%BB%D0%BE%D0%B2%D0%B8%D1%9B%D0%B8,+Montenegro/@42.277622,18.8802891,16z/data=!4m6!3m5!1s0x134dd40cf8e7a561:0xc90b9353b8a0af55!8m2!3d42.2802547!4d18.8833714!16s%2Fg%2F1ypmn14jy?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/rafailovici-budva-large.webp",
+        "tablet": "../finalproject/images/rafailovici-budva-medium.webp",
+        "mobile": "../finalproject/images/rafailovici-budva-small.webp"
+      }
+    },
+    {
+      "name": "Kamenovo Beach",
+      "description": "Kamenovo Beach is a picturesque and serene beach located on the Budva Riviera in Montenegro. Nestled between the towns of Bečići and Pržno, it is known for its crystal-clear turquoise waters and soft white sands. The beach stretches for about 730 meters and offers a mix of small pebbles and sand, creating a unique and inviting terrain. Surrounded by lush Mediterranean vegetation, Kamenovo Beach provides a peaceful and relaxing environment, away from the hustle and bustle of the city. It is a great spot for swimming, sunbathing, and enjoying water sports like jet skiing and paddleboarding.",
+      "location": "https://www.google.com/maps/place/Kamenovo+beach/@42.2767329,18.8814693,16z/data=!4m15!1m8!3m7!1s0x134dd40cf8e7a561:0xc90b9353b8a0af55!2z0KDQsNGE0LDQuNC70L7QstC40ZvQuCwgTW9udGVuZWdybw!3b1!8m2!3d42.2802547!4d18.8833714!16s%2Fg%2F1ypmn14jy!3m5!1s0x134dd411c0ccc50d:0xc17b20946bf03c3a!8m2!3d42.2753411!4d18.8868994!16s%2Fg%2F1wy6ysl9?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/kamenovo-beach-budva-large.webp",
+        "tablet": "../finalproject/images/kamenovo-beach-budva-medium.webp",
+        "mobile": "../finalproject/images/kamenovo-beach-budva-small.webp"
+      }
+    },
+    {
+      "name": "Petrovac",
+      "description": "Petrovac is a charming coastal town located on the Adriatic Sea, about 17 kilometers south of Budva. Known for its tranquil atmosphere, Petrovac is a popular destination for families and those seeking a peaceful retreat. The town-budva features a beautiful 600-meter-long sandy beach, surrounded by lush Mediterranean vegetation and crystal-clear waters. Petrovac's history dates back to Roman times, and you can still see remnants of ancient villas and mosaics. The town-budva also boasts a 16th-century Venetian fortress, Kastel Lastva, which adds to its historical charm.",
+      "location": "https://www.google.com/maps/place/Petrovac,+Montenegro/@42.2040852,18.9251944,14z/data=!3m1!4b1!4m6!3m5!1s0x134dd62e6162df99:0xdc35e93a8533ca13!8m2!3d42.2053317!4d18.9457661!16zL20vMDhxY3Bo?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/petrovac-budva-large.webp",
+        "tablet": "../finalproject/images/petrovac-budva-medium.webp",
+        "mobile": "../finalproject/images/petrovac-budva-small.webp"
+      }
+    },
+    {
+      "name": "Church of the Holy Trinity",
+      "description": "The Church of the Holy Trinity, located in Budva's Old Town, is a significant Orthodox church built in 1804. It features a distinctive architectural design with a central dome and alternating rows of white and stone blocks on its façade. The church's bell tower has three bells, and its façade is adorned with a rosette above the western door. Inside, the church houses an impressive iconostasis created by Greek iconographers in the 19th century. In front of the church, you will find the tombstone of Stefan Mitrov Ljubiša, a notable author and politician from Budva.",
+      "location": "https://www.google.com/maps/place/Holy+Trinity+Church/@42.2773665,18.8352673,17z/data=!3m1!4b1!4m6!3m5!1s0x134dd493821015cf:0x90092c84a518c7cf!8m2!3d42.2773626!4d18.8378422!16s%2Fg%2F12hv22xnf?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      "image": {
+        "desktop": "../finalproject/images/church-of-the-holy-trinity-budva-large.webp",
+        "tablet": "../finalproject/images/church-of-the-holy-trinity-budva-medium.webp",
+        "mobile": "../finalproject/images/church-of-the-holy-trinity-budva-small.webp"
+      }
+    }
+]
