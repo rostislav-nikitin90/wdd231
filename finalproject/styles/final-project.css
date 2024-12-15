@@ -347,11 +347,13 @@ input[type="submit"],
 
 .budva-attraction-box:nth-of-type(odd) h3,
 #modalLink,
-label {
+label,
+.class-project-info a {
     color: var(--primary);
 }
 
-#budvaAttractionPhoto img {
+#budvaAttractionPhoto img,
+.attributions-container a {
     display: block;
 }
 
@@ -451,7 +453,8 @@ input[type="submit"] {
     padding: .85rem .5rem;
 }
 
-label {
+label,
+.attributions-container a {
     margin-top: 1rem;
 }
 
@@ -498,7 +501,8 @@ input[type="submit"]:active {
     border-left: 3px solid var(--accent2);
 }
 
-#submittedFormData {
+#submittedFormData,
+.attributions-container a {
     padding: 1rem;
 }
 
