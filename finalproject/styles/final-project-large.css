@@ -558,6 +558,11 @@
         height: auto;
         padding: 1rem 0rem 0rem;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .grid .budva-attraction-box:hover {
+        transform: scale(1.05);
     }
 
     .budva-attraction-box:nth-of-type(odd) {
