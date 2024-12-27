@@ -301,6 +301,13 @@ main section {
     margin: 0rem 1.2rem;
 }
 
+.course-work li a,
+.course-work li a:hover,
+.course-work li a:active,
+.course-work li a:visited {
+    color: var(--brown);
+}
+
 .budva-section {
     display: grid;
     grid-template-rows: auto auto;
