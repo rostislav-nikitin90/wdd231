@@ -13,7 +13,7 @@ if (everything.length > 1) {
         let result = "";
         formData.forEach((element) => {
             if (element.startsWith(i)) {
-                result = decodeURIComponent(element.split("=")[1].replace("+"," "));
+                result = decodeURIComponent(element.split("=")[1].replace(/\+/g, " "));
             }
         });
         return result;
@@ -24,8 +24,7 @@ if (everything.length > 1) {
     <h3>Submitted Form Data:</h3>
     <p><strong>New Form Request:</strong> ${show("first-name")} ${show("last-name")}</p>
     <p><strong>Email:</strong> <a href="mailto:${show("email")}">${show("email")}</a></p>
-    <p><strong>Message:</strong> ${show("message-description")}</p>
-    <p><strong>Form Data Submitted:</strong> ${show("timestamp")}</p>`;
+    <p><strong>Message:</strong> ${show("message-description")}</p>`;
 } else {
     console.error("No query parameters found in the URL.");
 }

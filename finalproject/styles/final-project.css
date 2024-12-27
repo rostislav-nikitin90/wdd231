@@ -196,8 +196,7 @@ h3,
 .button-container,
 .menu-link,
 .dot-container,
-#modalLink,
-#submittedFormData {
+#modalLink {
     text-align: center;
 }
 
@@ -434,7 +433,7 @@ label,
     backdrop-filter: blur(10px);
 }
 
-
+/* contact page */
 .contact-form-heading {
     margin: 4rem 1rem 1rem;
 }
@@ -526,7 +525,10 @@ input[type="submit"]:active {
     border-left: 3px solid var(--accent2);
 }
 
-#submittedFormData,
+#submittedFormData {
+    padding: 1rem 1rem 3.5rem;
+}
+
 .attributions-container a {
     padding: 1rem;
 }
