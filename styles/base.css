@@ -302,10 +302,13 @@ main section {
 }
 
 .course-work li a,
-.course-work li a:hover,
 .course-work li a:active,
 .course-work li a:visited {
     color: var(--brown);
+}
+
+.course-work li a:hover {
+    color: var(--darkbrown);
 }
 
 .budva-section {
